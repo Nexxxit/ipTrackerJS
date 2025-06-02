@@ -21,12 +21,40 @@
     <link rel="stylesheet" href="./src/style.css" />
 
     <title>Frontend Mentor | IP Address Tracker</title>
-
   </head>
   <body>
-    IP Address Tracker Search for any IP address or domain IP Address Location
-    Timezone UTC
-    ISP
+    <header class="finder rubik-500">
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="search-bar">
+        <input
+          class="search-bar__input rubik-400"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-bar__btn">
+          <img src="./images/icon-arrow.svg" />
+        </button>
+      </div>
+    </header>
+
+    <section class="info">
+      <div class="info__block">
+        <div class="info__block-subtitle">IP Address</div>
+        <div class="info__block-title" id="ip"></div>
+      </div>
+      <div class="info__block">
+        <div class="info__block-subtitle">Location</div>
+        <div class="info__block-title" id="location"></div>
+      </div>
+      <div class="info__block">
+        <div class="info__block-subtitle">Timezone</div>
+        <div class="info__block-title">UTC<span id="timezone"></span></div>
+      </div>
+      <div class="info__block">
+        <div class="info__block-subtitle">ISP</div>
+        <div class="info__block-title" id="isp"></div>
+      </div>
+    </section>
 
     <div class="attribution">
       Challenge by
