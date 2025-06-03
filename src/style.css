@@ -79,11 +79,12 @@
   flex-shrink: 1;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .info__block-subtitle {
   color: hsl(0, 0%, 59%);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .info__block-title {
@@ -101,6 +102,10 @@
     max-width: 1000px;
   }
 
+  .info__block {
+    align-items: start;
+    justify-content: start;
+  }
   .line {
     display: block;
   }
