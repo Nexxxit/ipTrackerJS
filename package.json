@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Nexxxit/ipTrackerJS#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }
