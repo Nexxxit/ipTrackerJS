@@ -1,7 +1,7 @@
 import "babel-polyfill";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { addTileLayer, validateIp, getAddress } from "./helpers";
+import { addTileLayer, validateIp, getAddress, addOffset } from "./helpers";
 import icon from "../images/icon-location.svg";
 
 const ipInput = document.querySelector(".search-bar__input");
@@ -56,4 +56,12 @@ function setInfo(mapData) {
 
   map.setView([lat, lng]);
   L.marker([lat, lng], { icon: markerIcon }).addTo(map);
+
+  if(matchMedia("(max-width: 768px)").matches) {
+    addOffset(map);
+  }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  getAddress('102.22.22.1').then(setInfo)
+})
