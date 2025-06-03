@@ -96,6 +96,10 @@
   display: none;
 }
 
+.map {
+  min-height: calc(100vh - 200px);
+}
+
 @media (min-width: 768px) {
   .info {
     flex-direction: row;
